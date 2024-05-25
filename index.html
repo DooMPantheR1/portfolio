@@ -5,29 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Существующее содержимое сайта -->
-
-    <div class="contact-info">
-        <p>Телефон: <a href="tel:+1234567890">+1234567890</a></p>
-        <a href="https://t.me/DmpthR" class="telegram-button">
-            <img src="https://raw.githubusercontent.com/DooMPantheR1/portfolio/main/side-line-opens-channel-on-telegram-telegram-apk-text-label-graphics-art-transparent-png-816667.png" alt="Telegram">
-        </a>
-    </div>
-
-    <!-- Существующее содержимое сайта -->
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме - Рязанов Богдан</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -107,6 +84,26 @@
             list-style-type: disc;
             margin-left: 20px;
         }
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .contact-info a {
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .telegram-button img {
+            width: 24px; /* Установим ширину иконки */
+            height: 24px; /* Установим высоту иконки */
+            display: inline-block;
+            vertical-align: middle;
+        }
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -132,9 +129,9 @@
             <p><strong>Имя:</strong> Рязанов Богдан</p>
             <p><strong>Адрес:</strong> Санкт-Петербург</p>
             <p><strong>Телефон:</strong> <a href="tel:+7(953)1438863">+7(953)1438863</a></p>
-        <a href="https://t.me/DmpthR" class="telegram-button">
-            <img src="https://raw.githubusercontent.com/DooMPantheR1/portfolio/main/telegram.png" alt="Telegram">
-        </a>
+            <a href="https://t.me/DmpthR" class="telegram-button">
+                <img src="https://raw.githubusercontent.com/DooMPantheR1/portfolio/main/telegram.png" alt="Telegram">
+            </a>
             <p><strong>Email:</strong> bogdan.riazanov@mail.ru</p>
             <h3>Интересы</h3>
             <p>Современные технологии, автоматизация, компьютеры, информационные системы, автоматизированные системы управления, государственное управление, бизнес, автомобили, философия, нейросети, развитие, работа на результат.</p>
