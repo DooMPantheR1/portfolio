@@ -19,10 +19,10 @@
             padding: 20px;
         }
         header {
-            background: #333;
+            background: #004080;
             color: #fff;
             padding: 10px 0;
-            border-bottom: #444 3px solid;
+            border-bottom: #003060 3px solid;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -49,10 +49,12 @@
         .sidebar {
             float: left;
             width: 25%;
-            background: #333;
+            background: #004080;
             color: #fff;
             padding: 15px;
             box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: 5%;
         }
         .sidebar h2, .sidebar h3 {
             color: #fff;
@@ -63,15 +65,14 @@
         .main {
             float: left;
             width: 70%;
-            margin-left: 5%;
             background: #fff;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 10px;
             box-sizing: border-box;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .main h2 {
-            color: #444;
+            color: #004080;
             border-bottom: 2px solid #77aaff;
             padding-bottom: 5px;
             margin-bottom: 10px;
@@ -86,15 +87,16 @@
         }
         .footer {
             clear: both;
-            background: #333;
+            background: #004080;
             color: #fff;
             text-align: center;
             padding: 30px 0;
             margin-top: 30px;
+            border-radius: 10px;
         }
         .profile-photo {
             width: 100%;
-            border-radius: 50%;
+            border-radius: 10px;
         }
         .job-title {
             cursor: pointer;
@@ -143,6 +145,9 @@
             header li {
                 padding: 0 5px;
             }
+            .sidebar {
+                margin: 0 0 20px 0;
+            }
         }
         @media (max-width: 480px) {
             header #branding h1 {
@@ -165,6 +170,14 @@
             <div id="branding">
                 <h1>Рязанов Богдан</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -172,7 +185,7 @@
         <aside class="sidebar">
             <img src="https://raw.githubusercontent.com/DooMPantheR1/portfolio/main/-zU_AjtPTo4.jpg" alt="Фото Богдана" class="profile-photo">
             <h2>Личные данные</h2>
-            <p><strong>Имя:</strong> Рязанов Богдан </p>
+            <p><strong>Имя:</strong> Рязанов Богдан</p>
             <p><strong>Адрес:</strong> Санкт-Петербург</p>
             <p><strong>Телефон:</strong> +7 (953) 1438863</p>
             <p><strong>Email:</strong> bogdan.riazanov@mail.ru</p>
@@ -203,9 +216,9 @@
                         <div class="job-title"><strong>Гос. структура - Главный государственный налоговый инспектор</strong><br>
                         <em>Май 2013 — Апрель 2021</em></div>
                         <ul class="job-details">
-                            <li> Работа с оборудованием и ПО (MySQL, Lotus, Office, FTP), взаимодействие с клиентами и сотрудниками.</li>
-                            <li> Май 2013 — Июнь 2015: Администрирование серверов, программирование, веб-администрирование, интеграция систем.</li>
-                            <li> Исполнение обязанностей главного государственного налогового инспектора.</li>
+                            <li>Работа с оборудованием и ПО (MySQL, Lotus, Office, FTP), взаимодействие с клиентами и сотрудниками.</li>
+                            <li>Май 2013 — Июнь 2015: Администрирование серверов, программирование, веб-администрирование, интеграция систем.</li>
+                            <li>Исполнение обязанностей главного государственного налогового инспектора.</li>
                         </ul>
                     </li>
                     <li>
@@ -244,7 +257,7 @@
                 <ul>
                     <li><strong>Организаторские навыки:</strong>
                         <ul>
-                            <li>Эффективное управление коллективом, включающим ИТ-сотрудников, специалистов, врачей и аналитиков.</li>
+                            <li>Эффективное управление коллективом, включающим ИТ-сотрудников, специалистов и прочий персонал.</li>
                             <li>Организация работы по внедрению и сопровождению автоматизированных информационных систем.</li>
                         </ul>
                     </li>
