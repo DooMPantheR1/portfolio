@@ -23,28 +23,11 @@
             color: #fff;
             padding: 10px 0;
             border-bottom: #003060 3px solid;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            text-align: center;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            display: flex;
+        header h1 {
             margin: 0;
-        }
-        header li {
-            padding: 0 10px;
-        }
-        header #branding h1 {
-            margin: 0;
-            font-size: 20px;
+            font-size: 24px;
         }
         .sidebar {
             float: left;
@@ -132,53 +115,22 @@
                 padding: 10px;
             }
             header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            header #branding h1 {
-                font-size: 18px;
-            }
-            header ul {
-                width: 100%;
-                justify-content: space-between;
-            }
-            header li {
-                padding: 0 5px;
-            }
-            .sidebar {
-                margin: 0 0 20px 0;
+                text-align: center;
             }
         }
         @media (max-width: 480px) {
-            header #branding h1 {
-                font-size: 16px;
-                width: 100%;
+            header h1 {
+                font-size: 20px;
             }
-            header ul {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            header li {
-                padding: 5px 0;
+            .sidebar {
+                margin: 0 0 20px 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Рязанов Богдан</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#experience">Опыт</a></li>
-                    <li><a href="#education">Образование</a></li>
-                    <li><a href="#skills">Навыки</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Рязанов Богдан</h1>
     </header>
 
     <div class="container">
