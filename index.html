@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме - Рязанов Богдан Станиславович</title>
+    <title>Резюме - Рязанов Богдан</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,6 +23,9 @@
             color: #fff;
             padding: 10px 0;
             border-bottom: #444 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         header a {
             color: #fff;
@@ -34,16 +37,14 @@
             padding: 0;
             list-style: none;
             display: flex;
-            justify-content: flex-end;
+            margin: 0;
         }
         header li {
-            padding: 0 20px;
-        }
-        header #branding {
-            float: left;
+            padding: 0 10px;
         }
         header #branding h1 {
             margin: 0;
+            font-size: 20px;
         }
         .sidebar {
             float: left;
@@ -97,10 +98,21 @@
         }
         .job-title {
             cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .job-title::before {
+            content: "▼";
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
         }
         .job-details {
             display: none;
             margin-top: 10px;
+        }
+        .job-title.open::before {
+            transform: rotate(90deg);
         }
         .job-details li {
             list-style-type: disc;
@@ -117,6 +129,33 @@
                 margin: 0;
                 padding: 10px;
             }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header #branding h1 {
+                font-size: 18px;
+            }
+            header ul {
+                width: 100%;
+                justify-content: space-between;
+            }
+            header li {
+                padding: 0 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            header #branding h1 {
+                font-size: 16px;
+                width: 100%;
+            }
+            header ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header li {
+                padding: 5px 0;
+            }
         }
     </style>
 </head>
@@ -124,7 +163,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1>Резюме - Рязанов Богдан Станиславович</h1>
+                <h1>Рязанов Богдан</h1>
             </div>
             <nav>
                 <ul>
@@ -303,8 +342,10 @@
                 var details = this.nextElementSibling;
                 if (details.style.display === 'none' || details.style.display === '') {
                     details.style.display = 'block';
+                    this.classList.add('open');
                 } else {
                     details.style.display = 'none';
+                    this.classList.remove('open');
                 }
             });
         });
